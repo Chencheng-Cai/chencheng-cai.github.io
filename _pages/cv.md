@@ -1,6 +1,7 @@
 ---
 layout: archive
-title: 
+title: Curriculum Vitae
+title-heading: false
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -17,10 +18,12 @@ Education
 * M.S. in Financial Statistics and Risk Management, Rutgers University, 2015
 * Ph.D in Statistics, Rutgers University, 2020
 
-Work experience
+Experience
 ======
 * Postdoctoral Research Associate, Temple University, 2020 -- present
 * Summer Quantitative Associate in Machine Learning, J.P. Morgan, 2018 
+* Research Assistant, Center for Statistical Science, Tsinghua University, 2013-2014 
+* Visiting Undergraduate Researcher, Deparment of Materials Science, Stanford University, 2012
 
 Talks
 ======

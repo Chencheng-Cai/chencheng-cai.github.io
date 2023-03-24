@@ -7,8 +7,8 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Chencheng Cai"
-title_separator          : "-"
+title                    : ""
+title_separator          : ""
 name                     : &name "Chencheng Cai"
 description              : &description "personal description"
 url                      : https://chencheng-cai.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Chencheng Cai"
   avatar           : "profile.png"
-  bio              : "Postdoctoral Research Associate"
+  bio              : "Postdoctoral Research Associate,<br>Temple University"
   location         : "Philadephia, Pennsylvania"
-  employer         : "Temple University"
+  employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Eq0WPpEAAAAJ"
   email            : "chencheng.cai.stat@gmail.com"
