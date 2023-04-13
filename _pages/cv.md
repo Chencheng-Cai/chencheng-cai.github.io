@@ -6,6 +6,7 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+  -/curriculum-vitae
 ---
 
 {% include base_path %}

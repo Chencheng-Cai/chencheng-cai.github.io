@@ -4,6 +4,8 @@ title: "Publications"
 title-heading: true
 permalink: /publications/
 author_profile: true
+redirect_from:
+  - /papers
 ---
 
   You can also find my articles on <u><a href="https://scholar.google.com/citations?user=Eq0WPpEAAAAJ">my Google Scholar profile</a>.</u>
