@@ -17,9 +17,9 @@ Most recent CV can be found [here]().
 
 Education
 ======
-* B.S. in Physics and Computer Softwares, Peking University, 2013
-* M.S. in Financial Statistics and Risk Management, Rutgers University, 2015
 * Ph.D in Statistics, Rutgers University, 2020
+* M.S. in Financial Statistics and Risk Management, Rutgers University, 2015
+* B.S. in Physics and Computer Softwares, Peking University, 2013
 
 Experience
 ======
