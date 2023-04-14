@@ -15,6 +15,8 @@ redirect_from:
 
 Papers
 ===
+* <b> State Space Emulation and Annealed Sequential Monte Carlo for High Dimensional Optimization</b>. <i> Statistica Sinica (accepted) </i>. 2023. [[arXiv](https://arxiv.org/abs/1911.07172)]\\
+  with Rong Chen.
 * <b> Resampling Strategy in Sequential Monte Carlo for Constrained Sampling Problems</b>. <i> Statistica Sinica </i>. 2023. [[link](https://www3.stat.sinica.edu.tw/ss_newpaper/SS-2022-0185_na.pdf)] \\
   with Rong Chen and Ming Lin.
 * <b> KoPA: Automated Kronecker Product Approximation</b>. <i>Journal of Machine Learning Research</i>. 2022. [[link](https://www.jmlr.org/papers/v23/20-931.html)]\\
@@ -34,8 +36,6 @@ Manuscripts
   with Jean Pouget-Abadie and Edoardo Airoldi.
 * <b> Matrix Completion using Kronecker Product Approximation</b>. [[arXiv](https://arxiv.org/abs/1911.11774)]\\
   with Rong Chen and Han Xiao.
-* <b> State Space Emulation and Annealed Sequential Monte Carlo for High Dimensional Optimization</b>. [[arXiv](https://arxiv.org/abs/1911.07172)]\\
-  with Rong Chen.
 * <b> Semiparametric Tensor Factor Analysis by Iteratively Projected SVD</b>. [[arXiv](https://arxiv.org/abs/2007.02404)]\\
   with Elynn Chen, Dong Xia and Jianqing Fan. 
 * <b> Bullwhip Effect of Supply Networks: Joint Impact of Network Structure and Market Demand</b>. [[arXiv](https://arxiv.org/abs/2208.04459)]\\
