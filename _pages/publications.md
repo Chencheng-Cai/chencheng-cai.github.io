@@ -17,7 +17,7 @@ Papers
 ===
 * <b> State Space Emulation and Annealed Sequential Monte Carlo for High Dimensional Optimization</b>. <i> Statistica Sinica (accepted) </i>. 2023. [[Preprint](https://www3.stat.sinica.edu.tw/ss_newpaper/SS-2022-0120_na.pdf)]\\
   with Rong Chen.
-* <b> Resampling Strategy in Sequential Monte Carlo for Constrained Sampling Problems</b>. <i> Statistica Sinica (accepted)</i>. 2023. [[Preprint](https://www3.stat.sinica.edu.tw/ss_newpaper/SS-2022-0185_na.pdf)] \\
+* <b> Resampling Strategy in Sequential Monte Carlo for Constrained Sampling Problems</b>. <i> Statistica Sinica (accepted)</i>. 2023. [[Preprint](https://www3.stat.sinica.edu.tw/preprint/SS-2022-0185_Preprint.pdf)] \\
   with Rong Chen and Ming Lin.
 * <b> KoPA: Automated Kronecker Product Approximation</b>. <i>Journal of Machine Learning Research</i>. 2022. [[link](https://www.jmlr.org/papers/v23/20-931.html)]\\
   with Rong Chen and Han Xiao.
