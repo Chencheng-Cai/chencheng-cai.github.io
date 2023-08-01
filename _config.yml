@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Chencheng Cai"
   avatar           : "profile.jpg"
-  bio              : "Postdoctoral Research Associate"
-  location         : "Philadephia, Pennsylvania"
-  employer         : "Temple University"
+  bio              : "Assistant Professor"
+  location         : "Pullman, WA"
+  employer         : "Washington State University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Eq0WPpEAAAAJ"
-  email            : "chencheng.cai.stat@gmail.com"
+  email            : "chencheng.cai@wsu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

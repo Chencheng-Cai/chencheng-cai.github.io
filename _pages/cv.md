@@ -18,7 +18,8 @@ Education
 
 Experience
 ======
-* Postdoctoral Research Associate, Temple University, 2020 -- present
+* Assistant Professor, Washington State University, 2023 -- present
+* Postdoctoral Research Associate, Temple University, 2020 -- 2023
 * Summer Quantitative Associate in Machine Learning, J.P. Morgan, 2018 
 * Research Assistant, Center for Statistical Science, Tsinghua University, 2013-2014 
 * Visiting Undergraduate Researcher, Department of Materials Science, Stanford University, 2012
