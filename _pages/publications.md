@@ -12,9 +12,13 @@ author_profile: true
 
 Papers
 ===
-* <b> State Space Emulation and Annealed Sequential Monte Carlo for High Dimensional Optimization</b>. <i> Statistica Sinica (accepted) </i>. 2023. [[Preprint](https://www3.stat.sinica.edu.tw/ss_newpaper/SS-2022-0120_na.pdf)]\\
+* <b> Independent-Set Design of Experiments for Estimating Treatment and Spillover Effects under Network Interference</b>. <i> International Conference on Learning Representations (accepted)</i>. 2024. [[arXiv](https://arxiv.org/abs/2312.04026)]\\
+  with Xu Zhang and Edoardo Airoldi.
+* <b> Semiparametric Tensor Factor Analysis by Iteratively Projected SVD</b>. <i> Journal of the Royal Statistical Society, Series B (in press) </i>. 2023.[[arXiv](https://arxiv.org/abs/2007.02404)]\\
+  with Elynn Chen, Dong Xia and Jianqing Fan. 
+* <b> State Space Emulation and Annealed Sequential Monte Carlo for High Dimensional Optimization</b>. <i> Statistica Sinica (in press) </i>. 2023. [[Preprint](https://www3.stat.sinica.edu.tw/preprint/SS-2022-0120_Preprint.pdf)]\\
   with Rong Chen.
-* <b> Resampling Strategy in Sequential Monte Carlo for Constrained Sampling Problems</b>. <i> Statistica Sinica (accepted)</i>. 2023. [[Preprint](https://www3.stat.sinica.edu.tw/preprint/SS-2022-0185_Preprint.pdf)] \\
+* <b> Resampling Strategy in Sequential Monte Carlo for Constrained Sampling Problems</b>. <i> Statistica Sinica (in press)</i>. 2023. [[Preprint](https://www3.stat.sinica.edu.tw/preprint/SS-2022-0185_Preprint.pdf)] \\
   with Rong Chen and Ming Lin.
 * <b> KoPA: Automated Kronecker Product Approximation</b>. <i>Journal of Machine Learning Research</i>. 2022. [[link](https://www.jmlr.org/papers/v23/20-931.html)]\\
   with Rong Chen and Han Xiao.
@@ -33,8 +37,6 @@ Manuscripts
   with Jean Pouget-Abadie and Edoardo Airoldi.
 * <b> Matrix Completion using Kronecker Product Approximation</b>. [[arXiv](https://arxiv.org/abs/1911.11774)]\\
   with Rong Chen and Han Xiao.
-* <b> Semiparametric Tensor Factor Analysis by Iteratively Projected SVD</b>. [[arXiv](https://arxiv.org/abs/2007.02404)]\\
-  with Elynn Chen, Dong Xia and Jianqing Fan. 
 * <b> Bullwhip Effect of Supply Networks: Joint Impact of Network Structure and Market Demand</b>. [[arXiv](https://arxiv.org/abs/2208.04459)]\\
   with Jin-Zhu Yü and Jianxi Gao.
 * <b> Assessment of Accuracy of Finite Difference Methods in Evaluation of Options within Heston Model</b>. [[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2630191)]
