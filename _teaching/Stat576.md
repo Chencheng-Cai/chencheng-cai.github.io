@@ -2,7 +2,6 @@
 title: "Stat 576"
 collection: teaching
 permalink: /teaching/Stat576
-date: None
 ---
 
 <h1>STAT 576 Bayesian Analysis </h1>
