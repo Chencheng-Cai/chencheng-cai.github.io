@@ -2,6 +2,8 @@
 title: "Stat 576"
 collection: teaching
 permalink: /teaching/Stat576
+author_profile: false
+date: 2024-08-20
 ---
 
 <h1>STAT 576 Bayesian Analysis </h1>
