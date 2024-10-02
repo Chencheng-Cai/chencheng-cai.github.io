@@ -1,8 +1,9 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Files"
 title-heading: true
 permalink: /files/
+author_profile: false
 ---
 
 {% include base_path %}
