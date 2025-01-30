@@ -8,4 +8,4 @@ author_profile: false
 
 {% include base_path %}
 
-<a href="/files/CSMC2024.pdf">591 Seminar Talk (2024.10)<a>
+<a href="/files/iGroup_Presentation.pdf">Colloquium Talk 2025<a>
