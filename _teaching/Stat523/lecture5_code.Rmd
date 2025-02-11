@@ -1,0 +1,104 @@
+---
+title: "Code Notebook for Lecture 5"
+output:
+  html_document:
+    df_print: paged
+---
+
+We will use the ``Sepal.Length`` column from the ``iris`` dataset in R. 
+
+```{r}
+x = iris$Sepal.Length 
+print(c(mean(x), sd(x)))
+```
+The sample mean is 5.84 and the sample standard deviation is 0.828.
+
+## Two-sided T-test
+We suppose the population distribution for the sepal length is normal with unknown mean $\mu$ and unknown standard deviation. 
+
+Consider the hypothesis testing: 
+$$H_0: \mu = 6\quad\text{ v.s. }\quad H_a:\mu\neq 6$$
+
+### Manual Implementation
+We first compute the T statistic, whose value is computed as -2.317 below.
+```{r}
+xbar = mean(x) # sample mean
+s = sd(x) # sample s.d.
+n = length(x) # sample size
+mu0 = 6 # null hypothesis 
+
+z = (xbar - mu0) / (s / sqrt(n)) # z statistic
+print(z)
+```
+
+Then we compute the p-value, which is 0.0219 < 0.05. 
+```{r}
+p.value = 2 * (1 - pt(abs(z), df=n-1))
+print(p.value)
+```
+Therefore, we reject the null with significance level 0.05.
+
+### Use ``t.test`` function
+The ``t.test`` function is built-in in R.
+```{r}
+test = t.test(x, alternative="two.sided", mu=6, conf.level=0.95)
+print(test)
+```
+The output of the t-test gives the confidence interval of the population mean, which dose not include the null hypothesis. Also, the p-value is computed. So we reject the null. 
+
+### Sample size determination
+Power and sample size determination are included in the built-in function ``power.t.test" in R. To compute the power at $\mu_1=5.8$:
+```{r}
+t.power = power.t.test(n=n, delta=-0.2, sd=s, 
+                       type="one.sample", alternative="two.sided")
+print(t.power)
+```
+
+
+To find the minimum sample size to ensure a power of 0.8 at $\mu=5.8$, we compute
+
+```{r}
+n.min = power.t.test(delta=-0.2, sd=s, power=0.8, 
+                     type="one.sample", alternative="two.sided")
+print(n.min)
+```
+Therefore, the minimum sample size is 137.
+
+Or, we can compute it by the approximated value below.
+```{r}
+n.size = ceiling((s * (qt(0.025, n-1) - qt(0.8, n-1)) / (5.8 - 6) ) ** 2)
+print(n.size)
+```
+
+
+## One-sided T-test
+
+Now we consider the following test: 
+$$H_0: \mu = 6\quad\text{ v.s. }\quad H_a:\mu < 6$$
+
+### Manual Implementation
+
+We will reuse the T-statistic we computed before. We adjust the p-value to the new hypothesis testing.
+```{r}
+p.value.new = pt(z, n-1)
+print(p.value.new)
+```
+The p-value is 0.011 < 0.05. So we reject the null. 
+
+### Use ``t.test`` function 
+```{r}
+test.new = t.test(x, alternative="less", mu=6, conf.level=0.95)
+print(test.new)
+```
+
+It gives the same p-value and same conclusion --- reject null. 
+
+### Sample Size Determination
+We use the ``power.t.test" function to compute the minimum sample size to ensure a power of 0.8 at $\mu_1=5.8$.
+```{r}
+n.min.new = power.t.test(delta=0.2, sd=s, power=0.8, 
+                     type="one.sample", alternative="one.sided")
+print(n.min.new)
+```
+
+The minimum sample size is 108.
