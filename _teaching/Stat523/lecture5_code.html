@@ -1761,6 +1761,90 @@ print(n.min.new)</code></pre>
 <p>The minimum sample size is 108.</p>
 </div>
 </div>
+<div id="two-sample-t-test" class="section level2">
+<h2>Two-sample T-test</h2>
+<div id="unpaired-t-test" class="section level3">
+<h3>Unpaired T-test</h3>
+<p>First, we want to compare whether the average
+<code>Sepal.Length</code> for <code>Setosa</code> is the same as that of
+<code>versicolor</code>. We prepare the two samples:</p>
+<pre class="r"><code>data1 = iris[iris$Species==&quot;setosa&quot;, 1]
+data2 = iris[iris$Species==&quot;versicolor&quot;, 1]</code></pre>
+<p>Now we run the built-in <code>t.test</code> function, assuming
+unequal variance.</p>
+<pre class="r"><code>out.test = t.test(data1, data2, alternative=&quot;two.sided&quot;, paired=F, var.equal=F)
+print(out.test)</code></pre>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  data1 and data2
+## t = -10.521, df = 86.538, p-value &lt; 2.2e-16
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -1.1057074 -0.7542926
+## sample estimates:
+## mean of x mean of y 
+##     5.006     5.936</code></pre>
+<p>The p-value is smaller than 0.05. Therefore, there is a significant
+difference in sepal length between the two species.</p>
+<p>We can also run the pooled t-test by assuming equal variance.</p>
+<pre class="r"><code>out.test = t.test(data1, data2, alternative=&quot;two.sided&quot;, paired=F, var.equal=T)
+print(out.test)</code></pre>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  data1 and data2
+## t = -10.521, df = 98, p-value &lt; 2.2e-16
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -1.1054165 -0.7545835
+## sample estimates:
+## mean of x mean of y 
+##     5.006     5.936</code></pre>
+<p>The result is the same.</p>
+</div>
+</div>
+<div id="paired-t-test" class="section level2">
+<h2>Paired T-test</h2>
+<p>Now we test whether there is any difference between the average
+<code>Sepal.Length</code> and the average <code>Petal.Length</code> for
+iris. First, we prepare the data.</p>
+<pre class="r"><code>data1 = iris$Sepal.Length
+data2 = iris$Petal.Length
+dif = data1 - data2</code></pre>
+<p>We can run a paired t-test using the built-in <code>t.test</code>
+function.</p>
+<pre class="r"><code>out.test = t.test(data1, data2, alternative=&quot;two.sided&quot;, paired=T)
+print(out.test)</code></pre>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  data1 and data2
+## t = 22.813, df = 149, p-value &lt; 2.2e-16
+## alternative hypothesis: true mean difference is not equal to 0
+## 95 percent confidence interval:
+##  1.904708 2.265959
+## sample estimates:
+## mean difference 
+##        2.085333</code></pre>
+<p>The outcome says there is significant difference between the two
+lengths.</p>
+<p>Equivalently, we can run a one-sample t-test on the difference.</p>
+<pre class="r"><code>out.test = t.test(dif, alternative=&quot;two.sided&quot;)
+print(out.test)</code></pre>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  dif
+## t = 22.813, df = 149, p-value &lt; 2.2e-16
+## alternative hypothesis: true mean is not equal to 0
+## 95 percent confidence interval:
+##  1.904708 2.265959
+## sample estimates:
+## mean of x 
+##  2.085333</code></pre>
+<p>The output is exactly the same as the paired t-test.</p>
+</div>
 
 
 
