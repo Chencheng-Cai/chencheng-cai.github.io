@@ -1727,6 +1727,64 @@ print(summary(fit5))</code></pre>
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 </div>
+<div id="textbook-example-11.9" class="section level2">
+<h2>Textbook Example 11.9</h2>
+<pre class="r"><code>data = data.frame(viberation = c(13.1, 13.2, 16.3, 15.8, 13.7, 14.3, 15.7, 15.8, 13.5, 12.5, 
+                                 15.0, 14.8, 15.7, 16.4, 13.9, 14.3, 13.7, 14.2, 13.4, 13.8, 
+                                 14.0, 14.3, 17.2, 16.7, 12.4, 12.3, 14.4, 13.9, 13.2, 13.1),
+                  
+                  casmater = as.factor(rep(c(&quot;Steel&quot;, &quot;Aluminum&quot;, &quot;Plastic&quot;), each=10)),
+                  source = as.factor(rep(rep(1:5, each=2), 3))
+                  )
+print(data)</code></pre>
+<pre><code>##    viberation casmater source
+## 1        13.1    Steel      1
+## 2        13.2    Steel      1
+## 3        16.3    Steel      2
+## 4        15.8    Steel      2
+## 5        13.7    Steel      3
+## 6        14.3    Steel      3
+## 7        15.7    Steel      4
+## 8        15.8    Steel      4
+## 9        13.5    Steel      5
+## 10       12.5    Steel      5
+## 11       15.0 Aluminum      1
+## 12       14.8 Aluminum      1
+## 13       15.7 Aluminum      2
+## 14       16.4 Aluminum      2
+## 15       13.9 Aluminum      3
+## 16       14.3 Aluminum      3
+## 17       13.7 Aluminum      4
+## 18       14.2 Aluminum      4
+## 19       13.4 Aluminum      5
+## 20       13.8 Aluminum      5
+## 21       14.0  Plastic      1
+## 22       14.3  Plastic      1
+## 23       17.2  Plastic      2
+## 24       16.7  Plastic      2
+## 25       12.4  Plastic      3
+## 26       12.3  Plastic      3
+## 27       14.4  Plastic      4
+## 28       13.9  Plastic      4
+## 29       13.2  Plastic      5
+## 30       13.1  Plastic      5</code></pre>
+<p>Then we run a mixed-effect ANOVA by treating the supply as a random
+effect.</p>
+<pre class="r"><code>fit6 = aov(viberation ~ casmater*source + Error(source), data=data)
+print(summary(fit6))</code></pre>
+<pre><code>## 
+## Error: source
+##        Df Sum Sq Mean Sq
+## source  4  36.67   9.169
+## 
+## Error: Within
+##                 Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+## casmater         2  0.705  0.3523   3.165   0.0713 .  
+## casmater:source  8 11.605  1.4507  13.030 1.76e-05 ***
+## Residuals       15  1.670  0.1113                     
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
 
 
 
