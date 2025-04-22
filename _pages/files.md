@@ -8,13 +8,10 @@ author_profile: false
 
 {% include base_path %}
 
-<a href="/files/iGroup_Presentation.pdf">Colloquium Talk 2025<a><br>
-
-
-<div>
+<ul>
 {% for file in site.static_files %}
       {% if file.path contains '/files/Stat423Pre' and file.extname == '.ppt' %}
-          <a href="{{ file.path }}"> {{file.path}} </a>
+          <li><a href="{{ file.path }}">{{ file.path }}</a></li>
       {% endif %}
 {% endfor %}
-</div>
+</ul>
