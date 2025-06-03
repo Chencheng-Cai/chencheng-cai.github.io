@@ -18,7 +18,8 @@ Education
 
 Experience
 ======
-* Assistant Professor, Washington State University, 2023 -- present
+* Applied Scientist, Microsoft, 2025 -- present
+* Assistant Professor, Washington State University, 2023 -- 2025
 * Postdoctoral Research Associate, Temple University, 2020 -- 2023
 * Summer Quantitative Associate in Machine Learning, J.P. Morgan, 2018 
 * Research Assistant, Center for Statistical Science, Tsinghua University, 2013-2014 
